@@ -1,0 +1,3 @@
+var minha_variavel=12323
+minha_variavel=123123
+var outra_variavel='sdfsdf'

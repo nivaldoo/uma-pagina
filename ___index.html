@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu portal</title>
+</head>
+
+<body>
+  <form action="http://localhost:7846/exemplo/post" method="POST" target="_blank"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)" enctype="application/x-www-form-urlencoded">
+
+    <span>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome">
+    </span>
+
+    <span>
+      <label for="idade">Idade:</label>
+      <input type="text" id="idade" name="idade" required>
+    </span>
+
+    <div>
+      <label for="endereco">Endereco:</label>
+      <input type="text" id="endereco" name="endereco">
+    </div>
+
+    <div>
+      <label for="casado">Casado?:</label>
+      <input type="checkbox" id="casado" name="casado">
+    </div>
+
+    <fieldset>
+      <legend> Cor Preferida: </legend>
+      <label for="preto">Preto:</label>
+      <input type="radio" id="preto" name="corPreferida" value="preto">
+
+      <label for="branco">Branco:</label>
+      <input type="radio" id="branco" name="corPreferida" value="branco">
+
+      <label for="">Amarelo:</label>
+      <input type="radio" id="amarelo" name="corPreferida" value="amarelo">
+    </fieldset>
+    <div>
+      <label for="carro">Carro:</label>
+      <select name="carro" id="carro" size="4" multiple>
+        <option value="">Escolha...</option>
+        <optgroup label="Chev">
+          <option value="onix">Onix</option>
+          <option value="celta">Celta</option>
+        </optgroup>
+        <optgroup label="Volks">
+          <option value="up">Up</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div>
+      <label for="browser">Navegador:</label>
+      <input list="browsers" id="browser" name="browser">
+      <datalist id="browsers">
+        <option value="">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+    </div>
+
+    <div>
+      0
+      <input type="range" id="a" name="a" value="50">
+      100 +
+      <input type="number" id="b" name="b" value="50">
+      =
+      <output name="x" for="a b"></output>
+    </div>
+    <div>
+      <input type="file" name="arquivo" id="arquivo">
+    </div>
+
+    <div>
+      <input type="submit" formnovalidate>
+      <input type="reset">
+      <input type="button" value="Teste">
+    </div>
+
+  </form>
+  <style>
+    datalist {
+      display: none;
+    }
+
+    fieldset {
+      width: 400px;
+    }
+
+    #endereco {
+      width: 300px;
+    }
+
+    #idade {
+      width: 60px;
+    }
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+</body>
+
+</html>

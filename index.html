@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu portal</title>
+</head>
+
+<body>
+  <form action="http://localhost:7846/exemplo/post" method="POST" target="_blank" enctype="multipart/form-data">
+
+    <div>
+      <label for="arquivo">Arquivo</label>
+      <input type="file" name="arquivo" id="arquivo" multiple>
+    </div>
+    <div>
+      <label for="teste">Texto</label>
+      <input type="text" name="teste" id="teste">
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" multiple>
+    </div>
+
+    <div>
+      <input type="submit">
+      <input type="reset">
+    </div>
+
+  </form>
+  <style>
+    datalist {
+      display: none;
+    }
+
+    fieldset {
+      width: 400px;
+    }
+
+    #endereco {
+      width: 300px;
+    }
+
+    #idade {
+      width: 60px;
+    }
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+</body>
+
+</html>

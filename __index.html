@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- o default é GET -->
+  <form action="http://localhost:7846/exemplo/post" method="POST">
+
+
+    Coca-cola<input type="radio" name="nome" value="coca">
+    Pepsi<input type="radio" name="nome" value="pepsi">
+
+    <div>
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+
+    <input type="checkbox" name="vehicle1">
+    <input type="checkbox" name="vehicle2">
+    <input type="text" name="endereco" required> <!-- redirect não funciona pq está redirecionando -->
+    <div>
+      <input type="submit" value="submit" formtarget="_blank" formnovalidate="formnovalidate">
+    </div>
+    <div>
+      <input type="submit" value="Multipart" formenctype="multipart/form-data">
+    </div>
+
+  </form>
+</body>
+
+</html>
